@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
+</head>
+
+<body ng-app="mainApp">
+    <h1>01 - Services & Factories</h1>
+
+    <div ng-if="true">
+    <div ng-controller="demoController">
+        {{counter}}
+        <br/>
+        <button ng-click="raiseEvent()">Raise event </button>
+        <br/>
+        <button ng-click="asyncFn()" >Async</button>
+{{message}}
+    </div>
+    </div>
+
+    <h2>Movies</h2>
+
+    <div ng-controller="moviesController as ctrl" >
+        {{message}}
+        <br/>
+
+        {{$id}}
+
+        <input type="text" ng-model="filterText"/>
+        <ul>
+            <li ng-repeat="movie in ctrl.movies | filter:{title:filterText}">
+                {{movie.title}}
+            </li>
+        </ul>
+
+    </div>
+
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="mainApp.js"></script>
+</body>
+</html>
