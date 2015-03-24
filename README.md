@@ -19,5 +19,6 @@ If you are **not** in one of our courses, enjoy the samples and please consider 
 - [http://karma-runner.github.io/](http://karma-runner.github.io/0.12/index.html)
 - [http://angular.github.io/protractor/](http://angular.github.io/protractor/#/tutorial)
 - [http://docs.seleniumhq.org/](http://docs.seleniumhq.org/)
+- [http://teropa.info/build-your-own-angular](http://teropa.info/build-your-own-angular)
 
 
