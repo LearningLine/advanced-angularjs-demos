@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
+</head>
+
+<body ng-app="mainApp">
+    <h1>04 - AngularJS Directives</h1>
+
+    <div ng-controller="demoController">
+        First name: <input type="text"
+                           data-set-focus=""
+                           ng-model="person.firstName"/>
+        <br/>
+        Last name: <input type="text" ng-model="person.lastName"/>
+
+    <div the-template="">
+        This was there
+    </div>
+    <the-template>More stuff</the-template>
+<div inherited-scope></div>
+<!--<div inherited-scope></div>-->
+
+            <div isolated-scope person="person"></div>
+        <div isolated-scope person="person" firstName="{{person.firstName}}"></div>
+
+        <!--<div inherited-scope isolated-scope person="person"></div>-->
+
+    </div>
+
+
+    <!--<script type="text/ng-template" id="/templates/demo.html">-->
+    <!--<p>The embedded template</p>-->
+    <!--</script>-->
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="mainApp.js"></script>
+
+</body>
+</html>
