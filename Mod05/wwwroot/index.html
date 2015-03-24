@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/toastr/toastr.css"/>
+</head>
+
+<body ng-app="mainApp">
+    <h1>05 - RootScopes Services Factories Providers</h1>
+
+    <h2>Movies</h2>
+
+    <div ng-controller="moviesController">
+        <button ng-click="showToast()">Toast</button>
+
+        <!--<ul>-->
+            <!--<li ng-repeat="movie in movies">-->
+                <!--{{movie.title}}-->
+            <!--</li>-->
+        <!--</ul>-->
+
+    </div>
+
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/toastr/toastr.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="mainApp.js"></script>
+    <script src="toastr.js"></script>
+</body>
+</html>
